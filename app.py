@@ -101,9 +101,11 @@ llm_engine = ChatOllama(
 # System Prompt Configuration
 
 system_prompt = SystemMessagePromptTemplate.from_template(
-    "You are an Expert AI assistant. Proivde consise, correct solutions"
-    "with strategic print statements for debugging. Always respond in English."
+    "You are an Expert AI assistant. Provide concise and correct solutions "
+    "with clear debugging strategies. Offer code examples when helpful. "
+    "Always respond in English."
 )
+
     
 # Session State Management
 
@@ -126,7 +128,11 @@ user_query = st.chat_input("Type your coding question  here..")
 
 def generate_ai_response(prompt_chain):
     processing_pipeline = prompt_chain | llm_engine | StrOutputParser()
-    return processing_pipeline.invoke({})
+    try:
+        return processing_pipeline.invoke({})
+    except Exception as e:
+        st.error(f"An error occurred: {e}")
+        return "I'm sorry, but I had trouble generating a response."
 
 def build_prompt_chain():
     prompt_sequence = [system_prompt]
