@@ -64,6 +64,16 @@ Users can ask any coding question, and the AI responds with concise answers, cod
 
 pip install -r requirements.txt
 
+## Running the Streamlit App
+
+Streamlit run app.py
+
+Here’s a quick look at the app interface:
+
+![App Interface Screenshot](images/app_UI.png)
+
+
+
 
 ## File Structure 
 Gen-AI-Application-Using-DeepSeek-R1-with-Langchain-And-Ollama/
