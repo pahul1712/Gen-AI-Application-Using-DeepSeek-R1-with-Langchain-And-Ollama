@@ -11,12 +11,9 @@ A Streamlit application that provides an AI programming assistant using the **De
 - [Installation and Setup](#installation-and-setup)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  - [Running the App](#running-the-app)
-- [Usage](#usage)
-  - [Example Queries](#example-queries)
+  - [Running the Streamlit App](#running-the-app)
 - [File Structure](#file-structure)
 - [Contributing](#contributing)
-- [License](#license)
 - [Author](#author)
 
 ---
@@ -66,4 +63,55 @@ Users can ask any coding question, and the AI responds with concise answers, cod
 
 ```bash
   pip install -r requirements.txt
+
+
+### Running the Streamlit App:
+
+```bash
+  streamlit run app.py
+
+
+
+## File Structure 
+Gen-AI-Application-Using-DeepSeek-R1-with-Langchain-And-Ollama/
+├── app.py                # Main Streamlit application
+├── README.md             # Project documentation (you're reading it now)
+├── requirements.txt      # All Python dependencies
+├── test.py               # Example or placeholder test script
+├── .gitignore            # Git ignore file
+└── venv/                 # (Optional) Virtual environment folder
+
+
+1. app.py:
+Contains the Streamlit code, UI design, and LLM prompt logic.
+
+2. requirements.txt:
+Lists dependencies needed to run the app.
+
+3. test.py:
+Basic script for testing or demonstration.
+
+
+### Contributing
+
+1. Fork the repository
+2. Create a new branch for your feature/fix:
+     git checkout -b feature/my-new-feature
+     git commit -m "Add some feature"
+     git push origin feature/my-new-feature
+     
+### Author
+
+Pahuldeep Singh Dhingra [ MS in Data Science at Florida Atlantic University,FL,USA]
+Check out my GitHub (@pahul1712) for more projects!
+
+Can also reach out to me on other plarforms:
+
+1. LinkedIn:  https://www.linkedin.com/in/pahuldeepsing/
+2. Personal Email: pahuldeepSingh531@gmail.com
+
+
+
+
+
 
