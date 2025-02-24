@@ -59,17 +59,10 @@ Users can ask any coding question, and the AI responds with concise answers, cod
    git clone https://github.com/pahul1712/Gen-AI-Application-Using-DeepSeek-R1-with-Langchain-And-Ollama.git
 
 
+
 ### Install Dependencies:
 
-```bash
-  pip install -r requirements.txt
-
-
-### Running the Streamlit App:
-
-```bash
-  streamlit run app.py
-
+pip install -r requirements.txt
 
 
 ## File Structure 
